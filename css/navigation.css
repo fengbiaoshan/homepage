@@ -1,0 +1,91 @@
+html{color:#000;background:#fff;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+.cf:before, .cf:after{content:"";display:table;}.cf:after{clear:both;}.cf{zoom:1;}
+body,html{width:100%;height:100%;overflow: hidden}
+.cf:after {clear: both;}
+
+/*顶部导航*/
+.navigation{position:fixed;z-index:2000;background:#fff;top:0;left:0;opacity:1;-webkit-transition:all .5s;-o-transition:all .5s;transition:all .5s;width: 100%}
+.navL{float:left;border-bottom:1px solid #000;width: 100%}
+.navL a{display:block;width:101%;height:70px;position:relative;text-decoration:none;font-family:'Brandon Grotesque W01';color:#000;font-size:14px;letter-spacing:1px;overflow:hidden;-moz-perspective:500px;-webkit-perspective:500;-o-perspective:500;-ms-perspective:500;-webkit-transform-style:preserve-3d;-ms-transform-style:preserve-3d;-o-transform-style:preserve-3d;transform-style:preserve-3d;}
+.navL li span{display:block;height:70px;width:1px;/*background:#000;*/left:0;top:0;z-index:3;position:absolute;}
+.navL a div:first-child{width:100%;height:70px;line-height:70px;text-align:center;background:#fff;color:#000;font-weight:500;-webkit-transform:rotateX(0deg);-ms-transform:rotateX(0deg);-o-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:center center bottom;-ms-transform-origin:center center bottom;-o-transform-origin:center center bottom;transform-origin:center bottom;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;position:relative;z-index:2;}
+.navL a div:last-child{width:100%;height:70px;line-height:70px;text-align:center;background:#000;color:#f1f1f1;font-weight:400;-webkit-transform:rotateX(-90deg);-ms-transform:rotateX(-90deg);-o-transform:rotateX(-90deg);transform:rotateX(-90deg);-webkit-transform-origin:center top;-ms-transform-origin:center top;-o-transform-origin:center top;transform-origin:center top;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s;position:relative;z-index:1;}
+.navL li{float:left;width:20%;height:70px;position:relative;overflow:hidden;}
+.navL a:hover div:first-child{-webkit-transform:rotateX(90deg);-ms-transform:rotateX(90deg);-o-transform:rotateX(90deg);transform:rotateX(90deg);margin-top:-70px;z-index:1;opacity:0}
+.navL a:hover div:last-child{-webkit-transform:rotateX(0deg);-ms-transform:rotateX(0deg);-o-transform:rotateX(0deg);transform:rotateX(0deg);z-index:2;margin-top:0px}
+
+/*底部导航*/
+#nav{width:100%;height:60px;position:absolute;bottom:0;left:0;z-index:300;background: #b1b1b1}
+#nav ul{width:100%;max-width:1000px;margin:0 auto;position:relative;z-index:300}
+#nav li{width:20%;float:left}
+#nav a{display:block;height:60px;line-height:60px;cursor:pointer;color:#b1b1b1;-webkit-transition:background .3s ease-out;-moz-transition:background .3s ease-out;-ms-transition:background .3s ease-out;-o-transition:background .3s ease-out;transition:background .3s ease-out;overflow:hidden;outline:0}
+#nav a:hover{color:#fff  }
+#nav #link-about:hover{background:#226cd4}
+#nav #link-log:hover{background:#c33}
+#nav #link-guide:hover{background:#3aa624}
+#nav #link-comment:hover{background:#f2ca00}
+#nav #link-app:hover{background:#c145cc}
+#nav a .link-icon{width:20px;height:20px;margin:20px 8px 0 0;background-image:url(http://www.qxllq.com/theme/images/icons-nav_078b02e.png);overflow:hidden}
+#nav a:hover .link-icon{background-image:url(http://www.qxllq.com/theme/images/icons-nav-active_8e6f1c1.png)}
+#nav #link-about .link-icon{background-position:0 0}
+#nav #link-log .link-icon{background-position:-20px 0}
+#nav #link-guide .link-icon{background-position:-40px 0}
+#nav #link-comment .link-icon{background-position:-60px 0}
+#nav #link-app .link-icon{background-position:-80px 0}
+#nav-overlay{width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;background:#000;opacity:.8;filter:alpha(opacity=80)}
+.link-text-wrapper{position:relative;left:50%;float:left}
+.link-text-wrapper .link-text{display:block;position:relative;left:-50%;white-space:nowrap;float:left}
+.link-text-wrapper .link-icon{float:left}
+
+
+
+@-webkit-keyframes haha {
+    0%{-webkit-transform:rotateZ(0deg) rotateX(0deg);}
+    100%{-webkit-transform:rotateZ(360deg) rotateX(360deg);}
+}
+
+@-moz-keyframes haha {
+    0%{-moz-transform:rotateZ(0deg) rotateX(0deg);}
+    100%{-moz-transform:rotateZ(360deg) rotateX(360deg);}
+}
+
+@-o-keyframes haha {
+    0%{-o-transform:rotateZ(0deg) rotateX(0deg);}
+    100%{-o-transform:rotateZ(360deg) rotateX(360deg);}
+}
+
+@keyframes haha {
+    0%{transform:rotateZ(0deg) rotateX(0deg);}
+    100%{transform:rotateZ(360deg) rotateX(360deg);}
+}
+
+.three-d{display: block;width: 73px;height: auto;position:absolute;top: 200px;left: 50%}
+.three-d img{-webkit-animation:haha 5s linear 0s infinite;animation:haha 5s linear 0s infinite;-moz-animation:haha 5s linear 0s infinite;-o-animation:haha 5s linear 0s infinite;}
+
+
+
+.sub-item{display:block;width:100%;position:absolute;height: 0px ;top: 100%;z-index: 500}
+.sub-item .button-down{width:990px;height:45px;padding-top:25px;margin-left:-495px;position:absolute;top:0;left:50%;z-index:500;cursor:pointer}
+.sub-item .button-down-icon{display:block;width:55px;height:12px;margin:0 auto;overflow:hidden;background:url(http://www.qxllq.com/theme/images/button-down_a87d001.png) no-repeat}
+.sub-item .button-down-shadow{display:none;width:100%;height:5px;position:absolute;bottom:-5px;left:0;overflow:hidden;background:url(http://www.qxllq.com/theme/images/button-down-shadow_7be46a3.png) no-repeat center top}
+.sub-item .button-down:hover .button-down-icon{background-position:0 -36px}
+.sub-item-wrapper{width:100%;max-width:1000px;height:100%;margin:0 auto;position:relative;overflow:hidden;z-index:1}
+.sub-item-container{width:100%;padding:75px 0 50px}
+.sub-item-header{display:block;width:84px;height:87px;padding:40px 0 70px;margin:0 auto;position:relative}
+.sub-item-header-icon{display:block;width:100%;height:100%;background:url(http://www.qxllq.com/theme/images/icons-sub-item-header_261d1ab.png) no-repeat}
+.about,.about .button-down{background:#228bd6}
+.about .button-down-icon{background-position:0 0}
+.about-header .sub-item-header-icon{background-position:0 0}
+.about-content{width:400px;height:50%;margin:0 auto 50px;font-size:14px;line-height:2;overflow: auto}
+.about-content p{margin-bottom:25px;text-align:justify}
+.about-content-splitter{border-top:dashed 1px #fff}
+.about-content .about-date{text-align:right}
+.about-footer{width:124px;height:25px;margin-left:-62px;position:relative;left:50%;float:left;background:url(http://www.qxllq.com/theme/images/bg-product-brand-blue_e0652ef.png) no-repeat}
+
+
+
+
+
+
+
+
